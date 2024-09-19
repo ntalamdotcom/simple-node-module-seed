@@ -1,0 +1,31 @@
+{
+  "name": "jira-datagrid",
+  "description": "Datagrid showing projects",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "type": "module",
+  "scripts": {
+    "rollup": "rollup -c -w",
+    "start": "tsc src/index.ts",
+    "test": "jest",
+    "local-pub": "npm publish --registry http://localhost:4873/",
+    "local-pat": "npm version patch & npm publish --registry http://localhost:4873/"
+  },
+  "keywords": [
+    "datagrid",
+    "jira",
+    "project",
+    "control",
+    "planning"
+  ],
+  "author": "ntalam",
+  "license": "ISC",
+  "devDependencies": {
+    "@rollup/plugin-typescript": "^11.1.6",
+    "nodemon": "^3.1.5",
+    "rollup": "^4.21.3",
+    "tslib": "^2.7.0",
+    "typescript": "^5.6.2"
+  },
+  "version": "0.0.15"
+}

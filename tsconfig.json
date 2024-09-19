@@ -1,0 +1,28 @@
+{
+    "compilerOptions": {
+        "target": "ES2023",
+        "module": "ESNext",
+        "declaration": true,
+        "outDir": "dist",
+        "strict": true,
+        "esModuleInterop": true,
+        // "baseUrl": ".",
+        // "paths": {
+        //     "jira-datagrid": [
+        //         "node_modules/jira-datagrid/dist/index.d.ts"
+        //     ]
+        // }
+    },
+    "scripts": {
+        "build": "rollup -c",
+        "prepublishOnly": "npm run build"
+    },
+    "include": [
+        "src/**/*",
+        "README.md",
+    ],
+    "exclude": [
+        "node_modules",
+        "test"
+    ],
+}
