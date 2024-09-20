@@ -1,22 +1,22 @@
 {
     "compilerOptions": {
-        "target": "ES2023",
-        "module": "ESNext",
-        "declaration": true,
-        "outDir": "dist",
-        "strict": true,
+        "jsx": "react",
+        "target": "es5", // Adjust to your target environment
+        "module": "commonjs",
+        "outDir": "./dist",
+        "declaration": true, // Generate type definitions
+        "declarationDir": "./dist",
+        "rootDir": "./src",
         "esModuleInterop": true,
-    },
-    "scripts": {
-        "build": "rollup -c",
-        "prepublishOnly": "npm run build"
+        "baseUrl": ".",
+        "paths": {
+            "@types/*": [
+                "node_modules/@types/*",
+            ]
+        }
     },
     "include": [
         "src/**/*",
-        "README.md",
-    ],
-    "exclude": [
-        "node_modules",
-        "test"
-    ],
+        "src/types.d.ts"
+    ]
 }
