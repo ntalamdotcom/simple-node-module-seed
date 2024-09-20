@@ -1,5 +1,5 @@
 {
-  "name": "jira-datagrid",
+  "name": "simple-node-module-seed",
   "description": "Datagrid showing projects",
   "main": "dist/index.js",
   "types": "dist/index.d.ts",
