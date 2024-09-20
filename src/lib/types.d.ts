@@ -13,6 +13,9 @@ export interface JiraProject {
     entityId: string;
     uuid: string;
 }
+export interface JiraProjectTest {
+    id: string;
+}
 
 // Define the root object export type
 export interface JiraIssues {
