@@ -14,7 +14,7 @@
   "scripts": {
     "start": "tsc src/index.ts",
     "test": "jest",
-    "git-local":"git add --all & git commit -m 'test' & git push",
+    "git-local": "git add --all & git commit -m 'test' & git push",
     "local-pub": "npm publish --registry http://localhost:4873/",
     "local-pat": "npm version patch & npx webpack & npm publish --registry http://localhost:4873/"
   },
@@ -52,5 +52,5 @@
     "next": "^14.2.12",
     "react": "^18"
   },
-  "version": "0.0.15"
+  "version": "0.0.16"
 }
