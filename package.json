@@ -5,11 +5,11 @@
   "types": "dist/index.d.ts",
   "type": "module",
   "scripts": {
-    "rollup": "rollup -c -w",
+    "rollup": "rollup -c",
     "start": "tsc src/index.ts",
     "test": "jest",
     "local-pub": "npm publish --registry http://localhost:4873/",
-    "local-pat": "npm version patch & npm publish --registry http://localhost:4873/"
+    "local-pat": "npm version patch & npm run rollup & npm publish --registry http://localhost:4873/"
   },
   "keywords": [
     "datagrid",

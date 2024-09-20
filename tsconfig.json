@@ -6,12 +6,6 @@
         "outDir": "dist",
         "strict": true,
         "esModuleInterop": true,
-        // "baseUrl": ".",
-        // "paths": {
-        //     "jira-datagrid": [
-        //         "node_modules/jira-datagrid/dist/index.d.ts"
-        //     ]
-        // }
     },
     "scripts": {
         "build": "rollup -c",
